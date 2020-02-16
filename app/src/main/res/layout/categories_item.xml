@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_margin_8dp"
     android:orientation="vertical">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:padding="5dp">
+        android:padding="@dimen/padding">
 
         <ImageView
+            android:layout_marginTop="8dp"
             android:id="@+id/iv_cat_thumb"
-            android:layout_width="125dp"
+            android:layout_width="139dp"
             android:layout_height="125dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:layout_marginBottom="56dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.722" />
 
         <TextView
             android:id="@+id/tv_cat_name"
-            android:layout_width="125dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="139dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_cat_thumb"
-            app:layout_constraintVertical_bias="0.317" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tv_cat_description"
-            android:layout_width="238dp"
-            android:layout_height="139dp"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="28dp"
+            android:layout_width="234dp"
+            android:layout_height="173dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,5 +1,6 @@
 package com.example.kalabok.adapters
 
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,6 +43,9 @@ class CategoriesAdapter(
         val thumbURL = models.categories[position].strCategoryThumb
         picasso.load(thumbURL).into(holder.thumb)
 
+        //for scrolling
+        holder.description.movementMethod=(ScrollingMovementMethod())
+
         val strCat = models.categories[position].strCategory
         holder.bind(strCat, onClickListener)
 
@@ -51,6 +55,7 @@ class CategoriesAdapter(
         val name = itemView.tv_cat_name
         val description = itemView.tv_cat_description
         val thumb = itemView.iv_cat_thumb
+
 
         fun bind(strCat: String, onClickListener: OnItemClick) {
             itemView.setOnClickListener { onClickListener.onClick(strCat) }
