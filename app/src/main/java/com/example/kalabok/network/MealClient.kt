@@ -15,6 +15,7 @@ interface MealClient {
 
     //query comes from Categories variable "strCategory" which is a String
     //..."c = lamb"
+
     @GET(END_POINT_MEALS)
     fun getMealsRepo(@Query("c") category: String): Observable<MealListModel>
 }
