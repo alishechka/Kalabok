@@ -10,7 +10,7 @@ import com.example.kalabok.model.categoryModel.CategoryListModel
 import com.example.kalabok.presenters.CategoriesPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), Contract.View<CategoryListModel>, OnItemClick {
+class ActivityCategory : AppCompatActivity(), Contract.View<CategoryListModel>, OnItemClick {
 
 
     private lateinit var presenter: CategoriesPresenter
